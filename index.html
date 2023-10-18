@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script> -->
+
+    <!-- Agrega estas líneas en la sección head de tu archivo HTML -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Marco Amaolo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#portada">Inicio</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyectos">Portafolio</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#tecnologias">Tecnologías</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="seccion__portada" id="portada">
+        <div class="container p-md-5">
+            <div class="row container_portada">
+                <div class="col-12 col-md-5 text-center d-flex align-items-center my-4 my-md-0 portada_titulo">
+                    <h1>Diseño y Programación Web</h1>
+                </div>
+                <div class="col-12 col-md-7 portada_imagen-y-texto">
+                    <div class="row portada_imagen p-lg-5 p-md-3 ">
+                        <img src="img/tecnologias/html.png" class="img-fluid mb-2 col-3 col-sm-2">
+                        <img src="img/tecnologias/css.png" class="img-fluid mb-2 col-3 col-sm-2">
+                        <img src="img/tecnologias/js.png" class="img-fluid mb-2 col-3 col-sm-2">
+                        <img src="img/tecnologias/nodejs.png" class="img-fluid mb-2 col-3 col-sm-2">
+                        <img src="img/tecnologias/php.png" class="img-fluid mb-2 col-3 col-sm-2">
+                        <img src="img/tecnologias/mysql.png" class="img-fluid mb-2 col-3 col-sm-2">
+                        <img src="img/tecnologias/react2.png" class="img-fluid mb-2 col-3 col-sm-2">
+                        <img src="img/tecnologias/laravel.png" class="img-fluid mb-2 col-3 col-sm-2">
+                        <img src="img/tecnologias/boostrap.png" class="img-fluid mb-2 col-3 col-sm-2">
+                        <img src="img/tecnologias/wordpress.png" class="img-fluid mb-2 col-3 col-sm-2">
+                        <img src="img/tecnologias/git.png" class="img-fluid mb-2 col-3 col-sm-2">
+                        <img src="img/tecnologias/markdown.png" class="img-fluid mb-2 col-3 col-sm-2">
+                    </div>
+
+                    <!-- <p>
+                        Hola! Bienvenido a mi portafolio de proyectos.
+                    </p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="seccion__proyectos" id="proyectos">
+        <div class="container">
+            <h2 class="proyectos__titulo">Portafolio</h2>
+            <div class="row">
+
+                <div class="col-12 col-md-6 col-lg-4 card__wrapper">
+                    <div class="card">
+                        <img src="img/portafolio.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Portafolio</h5>
+                            <p class="card-text">Web desarrollada con HTML y Boostrap.</p>
+
+                            <div class="card-date">
+                                <p>07/2023</p>
+                            </div>
+
+                            <a href="https://github.com/MarcoA36/portafolio" class="btn btn-secondary">Ir al
+                                repositorio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 card__wrapper">
+                    <div class="card">
+                        <img src="img/diario.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Diario digital Frontend Js</h5>
+                            <p class="card-text">Clonacion del diseño de <a href="https://www.bbc.com/">BBC</a>
+                                desarrollado con JS, usando un enfoque de Single Page Application. Obtiene las noticias
+                                de la api <i class="fas fa-arrow-right"></i> <i class="fas fa-arrow-right"></i></p>
+
+                            <div class="card-date">
+                                <p>06/2023</p>
+                            </div>
+
+                            <a href="https://github.com/MarcoA36/diario_digital/tree/main/diario_digital_js"
+                                class="btn btn-secondary">Ir al repositorio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 card__wrapper">
+                    <div class="card">
+                        <img src="img/diario.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Diario digital Frontend PHP</h5>
+                            <p class="card-text">Clonacion del diseño de <a href="https://www.bbc.com/">BBC</a>
+                                desarrollado con PHP, basandome en la arquitectura que utiliza Wordpress. Obtiene las
+                                noticias de la api <i class="fas fa-arrow-right"></i></p>
+
+                            <div class="card-date">
+                                <p>06/2023</p>
+                            </div>
+                            <a href="https://github.com/MarcoA36/diario_digital/tree/main/diario_digital_php"
+                                class="btn btn-secondary">Ir al repositorio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 card__wrapper">
+                    <div class="card">
+                        <img src="img/apiphp.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Api de diario digital</h5>
+                            <p class="card-text">Desarrollada en php. Hace las consultas a la base de datos para obtener
+                                las noticias cargadas desde el
+                                panel de
+                                administracion <i class="fas fa-arrow-right"></i></p>
+
+                            <div class="card-date">
+                                <p>06/2023</p>
+                            </div>
+                            <a href="https://github.com/MarcoA36/diario_digital/tree/main/admin/api"
+                                class="btn btn-secondary">Ir al repositorio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 card__wrapper">
+                    <div class="card">
+                        <img src="img/panel.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Panel de administracion de diario digital</h5>
+                            <p class="card-text">Panel de administracion para diario digital con dos niveles de usuario:
+                                redactor y administrador. El redactor solo puede cargar, editar, y borrar sus propias
+                                noticias,
+                                mientras que el administrador ademas de las funciones del redactor, tiene la posibilidad
+                                de
+                                publicar o rechazar todas las noticias cargadas.</p>
+
+                            <div class="card-date">
+                                <p>06/2023</p>
+                            </div>
+                            <a href="https://github.com/MarcoA36/diario_digital/tree/main/admin/app"
+                                class="btn btn-secondary">Ir al repositorio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 card__wrapper">
+                    <div class="card">
+                        <img src="img/wordpress.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tema para Wordpress</h5>
+                            <p class="card-text">Tema para incluir en la carpeta <strong>wp-content/themes</strong> de
+                                Wordpress. Desarrollado con PHP y Boostrap.</p>
+
+                            <div class="card-date">
+                                <p>04/2023</p>
+                            </div>
+                            <a href="https://github.com/MarcoA36/tema_wordpress" class="btn btn-secondary">Ir al
+                                repositorio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 card__wrapper">
+                    <div class="card">
+                        <img src="img/landing_produccion.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Landing Page responsive</h5>
+                            <p class="card-text">Prototipo de landing page responsive con distintas secciones.
+                                Desarrollada con HTML, CSS y JS.</p>
+
+                            <div class="card-date">
+                                <p>09/2022</p>
+                            </div>
+                            <a href="proyectos/landing_produccion/index.html" class="btn btn-secondary">Ver</a>
+                            <a href="https://github.com/MarcoA36/landing_produccionMusical" class="btn btn-secondary">Ir
+                                al
+                                repositorio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 card__wrapper">
+                    <div class="card">
+                        <img src="img/juegoDeMemoria.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Juego de memoria</h5>
+                            <p class="card-text">Desarrollado con HTML, CSS y JS. Consiste en encontrar las tarjetas que
+                                coinciden antes de que el contador llegue a 0.</p>
+
+                            <div class="card-date">
+                                <p>03/2022</p>
+                            </div>
+                            <a href="proyectos/js/juegoDeMemoria/index.html" class="btn btn-secondary">Ver</a>
+                            <a href="https://github.com/MarcoA36/juegos/tree/main/juegoDeMemoria"
+                                class="btn btn-secondary">Ir
+                                al repositorio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 card__wrapper">
+                    <div class="card">
+                        <img src="img/juegoDePreguntas.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Juego de preguntas</h5>
+                            <p class="card-text">Desarrollado con HTML, CSS, JS, PHP y Mysql. El usuario tiene la opcion
+                                de cargar sus propias preguntas en la base de datos.</p>
+                            <!-- <a href="proyectos/js/juegoDePreguntas/index.html" class="btn btn-secondary">Ver demo</a> -->
+                            <div class="card-date">
+                                <p>02/2022</p>
+                            </div>
+                            <a href="proyectos/js/juegoDePreguntas/index.html" class="btn btn-secondary">Ver demo</a>
+                            <a href="https://github.com/MarcoA36/juegos/tree/main/juegoDePreguntas"
+                                class="btn btn-secondary">Ir al repositorio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 card__wrapper">
+                    <div class="card">
+                        <img src="img/juegoDeSuma.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Juego de suma</h5>
+                            <p class="card-text">Desarrollado con HTML, CSS y JS. Consiste en escribir el
+                                resultado correcto o acercarse lo maximo posible (antes de que el contador llegue a 0),
+                                para acumular la mayor cantidad de puntos.</p>
+
+                            <div class="card-date">
+                                <p>08/2021</p>
+                            </div>
+                            <a href="proyectos/js/juegoDeSuma/index.html" class="btn btn-secondary">Ver</a>
+                            <a href="https://github.com/MarcoA36/juegos/tree/main/juegoDeSuma"
+                                class="btn btn-secondary">Ir al
+                                repositorio</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <section class="seccion__contacto bg-dark text-white" id="contacto">
+            <div class="container p-4">
+                <div class="row mx-auto">
+
+                    <div class="col-12 col-md-6">
+
+                        <p>
+                            <a href="https://wa.me/+542284656640" class="link_whatsapp">
+                                <i class="fab fa-whatsapp"></i> Enviar whatsApp
+                            </a>
+                        </p>
+
+                        <p class="link__cel">
+                            <i class="fas fa-phone"></i> +54 2284656640
+                        </p>
+                        <p class="link__correo">
+                            <i class="far fa-envelope"></i> marco_95_5@yahoo.com
+                        </p>
+
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i> Olavarría, Buenos Aires, Argentina
+                        </p>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4 card__wrapper">
+                        <form action="https://formspree.io/f/mjvqkwej" method="POST" class="w-lg-50 mx-auto">
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control mb-2" placeholder="Email">
+                                <textarea name="message" class="form-control mb-2 form__mensaje"
+                                    placeholder="Mensaje"></textarea>
+                                <button type="submit" class="btn btn-secondary w-100">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </footer>
+
+
+</body>
+
+</html>

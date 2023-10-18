@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.seccion__portada .container__portada {
+    max-width: 80%;
+    margin: auto;
+}
+
+.seccion__proyectos .card {
+    margin-bottom: 10px;
+}
+
+.seccion__proyectos .proyectos__titulo {
+    margin: 20px 0;
+}
+
+.seccion__tecnologias .card__container {
+    text-align: center;
+}
+
+
+.seccion__contacto .form__mensaje {
+   min-height: 200px;
+}
+
+/* .seccion__contacto * {
+    color: white;
+} */
+
+.link_whatsapp {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+
+@media(max-width:600px) {
+    .portada_titulo h1{
+        text-align: center;
+        margin: auto;
+    }
+
+    .portada_imagen {
+        margin-bottom: 10px;
+    }
+
+    .portada_imagen-y-texto {
+        margin: 20px 0;
+    }
+
+    .card__wrapper {
+        margin-bottom: 20px;
+    }
+
+
+}
