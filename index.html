@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body class="body">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-dark bg-dark navbar_container">
+            <div class="container">
+                <a class="navbar-brand" href="#">Marco Amaolo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#portada">Inicio</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyectos">Portafolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tecnologias">Tecnologías</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/MarcoA36">Repositorio Github</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+      <section class="seccion__portada seccion d-flex align-items-center">
+        <div class="container p-md-5 text-center">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h1 class="display-1 mb-3">Diseño y Programación Web</h1>
+                    <p class="lead mb-3 display-6">Bienvenid@ a mi portafolio de proyectos...</p>
+                    <a href="https://github.com/MarcoA36" class="btn btn-dark p-3">Repositorio GitHub</a>
+                </div>
+                <div class="col-md-6 text-center d-none d-xl-block">
+                    <img src="img/svg.png" class="portada_imagen">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+      
+
+
+
+
+      
+      
+
+
+    <section class="seccion__proyectos seccion" id="proyectos">
+        <div class="container">
+            <h2 class="proyectos__titulo text-white text-center pb-2 display-3">Portafolio</h2>
+            <div class="row">
+                
+
+                <div class="col-12 col-lg-6 col-xl-4 card__wrapper">
+                    <a href="index.html" class="card-link">
+                    <div class="card bg-dark text-white">
+                        <img src="img/portafolio.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Portafolio</h5>
+                            <p class="card-text">Web desarrollada con HTML y Boostrap.</p>
+
+                            <div class="card-date">
+                                <p>07/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+
+                <div class="col-12 col-lg-6 col-xl-4 card__wrapper">
+    <a href="https://fuscous-conjunction.000webhostapp.com/diario_digital-main/diario_digital_js/index.html#/inicio" class="card-link">
+        <div class="card bg-dark text-white">
+            <img src="img/diario.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-white">Diario digital Frontend Js</h5>
+                <p class="card-text text-white">Clonación del diseño de <strong>www.bbc.com</strong>
+                    desarrollado con JS, usando un enfoque de Single Page Application. Muestra las noticias mostradas desde el Panel </p>
+
+                <div class="card-date">
+                    <p>06/2023</p>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+
+
+                <div class="col-12 col-lg-6 col-xl-4 card__wrapper">
+                     <a href="https://fuscous-conjunction.000webhostapp.com/diario_digital-main/diario_digital_php/index.php" class="card-link">
+                    <div class="card bg-dark text-white">
+                        <img src="img/diario.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Diario digital Frontend PHP</h5>
+                            <p class="card-text">Clonacion del diseño de <strong>www.bbc.com</strong>
+                                desarrollado con PHP, basandome en la arquitectura que utiliza Wordpress. Muestra las noticias publicadas desde el panel</p>
+
+                            <div class="card-date">
+                                <p>06/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                     </a>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-4 card__wrapper">
+                     <a href="https://fuscous-conjunction.000webhostapp.com/diario_digital-main/admin/index.html" class="card-link">
+                    <div class="card bg-dark text-white">
+                        <img src="img/panel.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Panel de administracion de diario digital</h5>
+                            <p class="card-text">Panel de administracion para diario digital con dos niveles de usuario:
+                                redactor y administrador. El redactor solo puede cargar, editar, y borrar sus propias
+                                noticias,
+                                mientras que el administrador ademas de las funciones del redactor, tiene la posibilidad
+                                de
+                                publicar o rechazar todas las noticias cargadas.
+                                [usuario:admin123 o redactor123, contra:123456]
+                            </p>
+                            <div class="card-date">
+                                <p>06/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                     </a>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-4 card__wrapper">
+                    <a href="https://github.com/MarcoA36/tema_wordpress" class="card-link">
+                    <div class="card bg-dark text-white">
+                        <img src="img/wordpress.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tema para Wordpress</h5>
+                            <p class="card-text">Tema para incluir en la carpeta <strong>wp-content/themes</strong> de
+                                Wordpress. Desarrollado con PHP y Boostrap.</p>
+
+                            <div class="card-date">
+                                <p>04/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-4 card__wrapper">
+                     <a href="proyectos/landing_produccion/index.html" class="card-link">
+                    <div class="card bg-dark text-white">
+                        <img src="img/landing_produccion.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sitio web estatico responsivo</h5>
+                            <p class="card-text">Prototipo de landing page responsive con distintas secciones.
+                                Desarrollada con HTML, CSS y JS.</p>
+
+                            <div class="card-date">
+                                <p>09/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                     </a>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-4 card__wrapper">
+                     <a href="proyectos/js/juegoDeMemoria/index.html" class="card-link">
+                    <div class="card bg-dark text-white">
+                        <img src="img/juegoDeMemoria.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Juego de memoria</h5>
+                            <p class="card-text">Desarrollado con HTML, CSS y JS. Consiste en encontrar las tarjetas que
+                                coinciden antes de que el contador llegue a 0.</p>
+
+                            <div class="card-date">
+                                <p>03/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                     </a>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-4 card__wrapper">
+                     <a href="proyectos/js/juegoDePreguntas/index.html" class="card-link">
+                    <div class="card bg-dark text-white">
+                        <img src="img/juegoDePreguntas.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Juego de preguntas</h5>
+                            <p class="card-text">Desarrollado con HTML, CSS, JS, PHP y Mysql.</p>
+                            <!-- <a href="proyectos/js/juegoDePreguntas/index.html" class="btn btn-secondary">Ver demo</a> -->
+                            <div class="card-date">
+                                <p>02/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                     </a>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-4 card__wrapper">
+                     <a href="proyectos/js/juegoDeSuma/index.html" class="card-link">
+                    <div class="card bg-dark text-white">
+                        <img src="img/juegoDeSuma.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Juego de suma</h5>
+                            <p class="card-text">Desarrollado con HTML, CSS y JS. Consiste en escribir el
+                                resultado correcto o acercarse lo maximo posible (antes de que el contador llegue a 0),
+                                para acumular la mayor cantidad de puntos.</p>
+
+                            <div class="card-date">
+                                <p>08/2021</p>
+                            </div>
+                        </div>
+                    </div>
+                     </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <section class="seccion__contacto bg-dark text-white pt-lg-4 " id="contacto">
+            <div class="container p-4">
+                <div class="row mx-auto">
+
+                    <div class="col-12 col-md-6">
+
+                        <p>
+                            <a href="https://wa.me/+542284656640" class="link_whatsapp">
+                                <i class="fab fa-whatsapp"></i> Enviar whatsApp
+                            </a>
+                        </p>
+
+                        <p class="link__cel">
+                            <i class="fas fa-phone"></i> +54 2284656640
+                        </p>
+                        <p class="link__correo">
+                            <i class="far fa-envelope"></i> marco_95_5@yahoo.com
+                        </p>
+
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i> Olavarría, Buenos Aires, Argentina
+                        </p>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4 card__wrapper">
+                        <form action="https://formspree.io/f/mjvqkwej" method="POST" class="w-lg-50 mx-auto">
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control mb-2" placeholder="Email">
+                                <textarea name="message" class="form-control mb-2 form__mensaje"
+                                    placeholder="Mensaje"></textarea>
+                                <button type="submit" class="btn btn-secondary w-100">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </footer>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

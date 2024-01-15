@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Lucky Boss</title>
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    
+        <meta name="description"
+            content="Productor y Compositor Argentino, nacido el 11 de julio de 1991 en la cuidad de Olavarría Provincia de Buenos Aires. " />
+        <meta name="keywords"
+            content="música, fl studio, produccion musical, cumbia, regaeton, trap, musica urbana, tutoriales, plugins, samples, musica latina " />
+        <!-- <meta name="robots" content="index,follow" /> -->
+        <!-- <meta http-equiv="cache-control" content="no-cache"/> -->
+    
+    </head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="cont-superior">
+                <div class="logo">
+                    <img src="img/FL_Studio_20_Icon.webp" alt="">
+                    <p class="titulo-logo">THELUCKYBOSS</p>
+                </div>
+
+                <div class="desplegable">
+                    <i class="fa-solid fa-bars icono-hamb" id="btn-menu"></i>
+
+                    <ul class="nav-menu-desplegable" id="nav-menu-desplegable">
+                        <li id="link1"><a href="index.html" class="btn-menu">Inicio</a></li>
+                        <li><a href="#cont-ultimos" class="btn-menu">Ultimos</a></li>
+                        <li><a href="#cont-vst" class="btn-menu">Mi estudio</a></li>
+                        <li><a href="#cont-artistas" class="btn-menu">Colaboraciones</a></li>
+                        <li><a href="#cont-sobreMi" class="btn-menu">Sobre mi</a></li>
+                        <li><a href="#cont-contacto" class="btn-menu">Contacto</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="nav-menu">
+                <ul>
+                    <li id="link1"><a href="index.html">Inicio</a></li>
+                    <li><a href="#cont-ultimos">Ultimos</a></li>
+                    <li><a href="#cont-vst">Plugins Vst</a></li>
+                    <li><a href="#cont-artistas">Colaboraciones</a></li>
+                    <li><a href="#cont-sobreMi">Sobre mi</a></li>
+                    <li><a href="#cont-contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="articulo_completo" id="articulo-completo">
+
+
+    </div>
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="cont-box-footer">
+                <div class="textos">
+                    <p>Creado por <span>theluckyboss.ar</span></p>
+                    <p>Distribuido por <span>Machirecord Producciones</span> </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+<script>
+    console.log(localStorage.getItem('articulo'))
+    let articulo_completo = localStorage.getItem('articulo')
+    document.getElementById('articulo-completo').innerHTML = articulo_completo
+</script>
+</html>
