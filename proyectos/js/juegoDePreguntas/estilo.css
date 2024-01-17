@@ -1,3 +1,10 @@
+:root {
+    --border-radius: 10%;
+    --box-shadow: 0 0 30px rgba(237, 229, 229, 0.8);
+    --box-shadow-2: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    --font-size-numeros: 74px;
+}
 
 .container_juego { 
     margin: auto;
@@ -9,8 +16,9 @@
     margin: auto;
     width: 78%;
  height: 70vh;
-    background-image: url(../imagenes/fondo1.jpg);
-    background-size: cover;
+ background-image: url(../imagenes/espacio1920.jpg);
+ background-size: cover;
+ box-shadow: var(--box-shadow);
     border-radius: 80px;
     /* float: left; */
     display: flex;
@@ -163,7 +171,7 @@
 
 .superior__unico-contador,
 .superior__unico-resultado {
-    font-size: 54px;
+    font-size: 114px;
     color: rgba(255, 255, 255, 0.521);
     text-align: center;
 }
@@ -283,7 +291,7 @@
     
     .superior__unico-contador,
     .superior__unico-resultado {
-        font-size: 48px;
+        font-size: 90px;
     }
     
     .juego_medio {
@@ -304,7 +312,7 @@ font-size: 21px;
     }
 
     .juego_medio .pregunta p{
-        font-size: 24px;
+        font-size: 32px;
       }
 
       .juego_opciones {
@@ -322,7 +330,7 @@ font-size: 21px;
     }
 
     .opciones input{
-        font-size: 18px;
+        font-size: 24px;
     }
 
 

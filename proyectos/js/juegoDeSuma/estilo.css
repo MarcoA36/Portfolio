@@ -1,16 +1,50 @@
+:root {
+    --border-radius: 10%;
+    --box-shadow: 0 0 30px rgba(237, 229, 229, 0.8);
+    --box-shadow-2: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    --font-size-numeros: 74px;
+}
+
+
+
+body{
+    min-height: 100%;
+    font-size: 34px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    background: black;
+    box-sizing: border-box;
+}
+
+body > * {
+    text-align: center;
+    
+}
+
+
 
 .container_juego {
     margin: auto;
     width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.juego,
+.juego_resultado{
+height: 78vh;
 }
 
 .juego {
     margin: auto;
     width: 78%;
-    height: 500px;
-    background-image: url(../imagenes/fondo1.jpg);
+    background-image: url(../imagenes/espacio1920.jpg);
     background-size: cover;
-    border-radius: 10%;   
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);   
     float: left;
     display: flex;
     flex-direction: column;  
@@ -35,22 +69,35 @@
 
 .inferior__unico {
     display: none;
+    text-align: center;
+    width: 240px;
 }
 
 /*RESULTADOS*/
+.juego_resultado > div,
+.juego_puntos > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-height: 100px;
+}
+
 .juego_resultado {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 20%;
-    height: 500px;
     text-align: center;
     font-size: 24px;
     float: right;
-}
+} 
 
 .juego_resultado > div {
-    border-radius: 10%;
+    border-radius: var(--border-radius);
     width: 100%;
 }
 
@@ -70,33 +117,25 @@
 /* JUEGO/CONTENIDO */
 /*/////////////////*/
 
-.juego button {
-    width: 100px;
-    height: 40px;
-    border-radius: 10%;
-    outline: none;
-    font-weight: 700;
-    background-color: transparent;
-    color: white;
-}
+
 
 
 .numeros {
-    font-size: 74px;
+    font-size: var(--font-size-numeros);
     text-align: center;
 }
 
 .superior__unico button {
-    width: 180px;
+    width: 100%;
     height: 80px;
     font-size: 20px;
     font-weight: 700;
-    border-radius: 20%;
-    /* border-bottom: 3px solid white; */
+    border-radius: var(--border-radius);
+
     background-color: transparent;
     color: white;
     outline: none;
-    box-shadow: 10px 10px 30px 10px;
+    box-shadow: var(--box-shadow);
     margin: auto;
 }
 
@@ -106,22 +145,28 @@
 
 .superior__unico-contador,
 .superior__unico-resultado {
-    font-size: 74px;
+    font-size: 190px;
     color: rgba(255, 255, 255, 0.521);
     text-align: center;
 }
 
-.inferior__unico input {
-    display: block;
-    width: 120px;
-    height: 80px;
-    font-size: 44px;
-    text-align: center;
-    border-radius: 10%;
-    outline: none;
+.inferior__unico input,
+.inferior__unico button {
+    border-radius: var(--border-radius);
+    font-weight: 700;
     background-color: transparent;
     color: white;
-    font-weight: 700;
+    outline: none;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+}
+
+.inferior__unico input {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 50px;
+    text-align: center;
  }
 
  /*SACAR FLECHAS DEL INPUT number */
@@ -134,9 +179,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /*PUNTUACIONES*/
-.dinamico {
-    font-size: 40px;
-}
 
 .puntos__textos {
     color: rgba(255, 255, 255, 0.521);
@@ -154,6 +196,8 @@ input[type=number]::-webkit-outer-spin-button {
     .container_juego {
         width: 98%;
         margin-top: 10px;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .superior__unico button {
@@ -161,9 +205,6 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 18px;
     }
 
-    .superior__unico .superior__unico-contador {
-        font-size: 60px;
-    }
 
     .juego {
         width: 100%;
@@ -178,25 +219,31 @@ input[type=number]::-webkit-outer-spin-button {
         border-bottom: none;
     }
 
+    .superior__unico-contador,
+    .superior__unico-resultado {
+    font-size: 80px;
+}
+
+.inferior__unico button {
+    height: 60px;
+}
+
+.juego_resultado > div {
+    border: 3px solid red;
+}
+
     .juego_resultado {
         width: 100%;
-        height: 55px;
+        height: 200px;
         flex-direction: row;
         margin: 24px 0;
     }
 
-    .juego_resultado > div{
-        border: none;
-    }
-    /* .juego_puntos {
-        w
+    /* .juego p {
+        font-size: 72px;
     } */
 
-    .juego p {
-        font-size: 52px;
-    }
-
-    .juego_puntos .dinamico,
+    /* .juego_puntos .dinamico,
     .juego_resultado .dinamico {
         font-size: 34px;
     }
@@ -204,7 +251,6 @@ input[type=number]::-webkit-outer-spin-button {
     .juego_puntos p,
     .juego_resultado p {
         font-size: 20px;
-    }
+    } */
 
 }
-
