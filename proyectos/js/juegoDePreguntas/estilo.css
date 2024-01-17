@@ -291,7 +291,7 @@
     
     .superior__unico-contador,
     .superior__unico-resultado {
-        font-size: 90px;
+        font-size: 70px;
     }
     
     .juego_medio {
@@ -312,7 +312,7 @@ font-size: 21px;
     }
 
     .juego_medio .pregunta p{
-        font-size: 32px;
+        font-size: 30px;
       }
 
       .juego_opciones {

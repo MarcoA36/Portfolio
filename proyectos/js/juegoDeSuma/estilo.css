@@ -40,8 +40,8 @@ height: 78vh;
 
 .juego {
     margin: auto;
-    width: 78%;
-    background-image: url(../imagenes/espacio1920.jpg);
+    width: 76%;
+    background-image: url("../imagenes/espacio1920.jpg");
     background-size: cover;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);   
@@ -228,10 +228,6 @@ input[type=number]::-webkit-outer-spin-button {
     height: 60px;
 }
 
-.juego_resultado > div {
-    border: 3px solid red;
-}
-
     .juego_resultado {
         width: 100%;
         height: 200px;
@@ -239,11 +235,11 @@ input[type=number]::-webkit-outer-spin-button {
         margin: 24px 0;
     }
 
-    /* .juego p {
+    .juego p {
         font-size: 72px;
-    } */
+    } 
 
-    /* .juego_puntos .dinamico,
+     .juego_puntos .dinamico,
     .juego_resultado .dinamico {
         font-size: 34px;
     }
@@ -251,6 +247,6 @@ input[type=number]::-webkit-outer-spin-button {
     .juego_puntos p,
     .juego_resultado p {
         font-size: 20px;
-    } */
+    } 
 
 }
