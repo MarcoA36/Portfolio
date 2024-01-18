@@ -106,7 +106,167 @@ const questions = [
                 "opcion2": "1907",
                 "opcion3": "1915",
                 "opcion4": "1921"
-        }
+        },
+        {
+                "id": 68,
+                "pregunta": "What is the currency of Brazil?",
+                "correcta": "Brazilian Real",
+                "opcion2": "Peso",
+                "opcion3": "Ruble",
+                "opcion4": "Yen"
+            },
+            {
+                "id": 69,
+                "pregunta": "Who is the author of 'To Kill a Mockingbird'?",
+                "correcta": "Harper Lee",
+                "opcion2": "J.K. Rowling",
+                "opcion3": "Ernest Hemingway",
+                "opcion4": "F. Scott Fitzgerald"
+            },
+            {
+                "id": 70,
+                "pregunta": "What is the largest desert in the world?",
+                "correcta": "Antarctica",
+                "opcion2": "Sahara",
+                "opcion3": "Gobi",
+                "opcion4": "Arabian"
+            },
+            {
+                "id": 71,
+                "pregunta": "Who is known as the 'Father of Computers'?",
+                "correcta": "Charles Babbage",
+                "opcion2": "Alan Turing",
+                "opcion3": "Bill Gates",
+                "opcion4": "Steve Jobs"
+            },
+            {
+                "id": 72,
+                "pregunta": "Which planet is known as the 'Red Planet'?",
+                "correcta": "Mars",
+                "opcion2": "Venus",
+                "opcion3": "Mercury",
+                "opcion4": "Jupiter"
+            },
+            {
+                "id": 73,
+                "pregunta": "In which year did the first human land on the Moon?",
+                "correcta": "1969",
+                "opcion2": "1975",
+                "opcion3": "1982",
+                "opcion4": "1957"
+            },
+            {
+                "id": 74,
+                "pregunta": "Who painted the 'Starry Night'?",
+                "correcta": "Vincent van Gogh",
+                "opcion2": "Claude Monet",
+                "opcion3": "Salvador Dalí",
+                "opcion4": "Pablo Picasso"
+            },
+            {
+                "id": 75,
+                "pregunta": "What is the largest mammal in the world?",
+                "correcta": "Blue Whale",
+                "opcion2": "Elephant",
+                "opcion3": "Giraffe",
+                "opcion4": "Hippopotamus"
+            },
+            {
+                "id": 76,
+                "pregunta": "Which city is known as the 'City of Love'?",
+                "correcta": "Paris",
+                "opcion2": "Venice",
+                "opcion3": "Rome",
+                "opcion4": "Barcelona"
+            },
+            {
+                "id": 77,
+                "pregunta": "Who wrote 'The Great Gatsby'?",
+                "correcta": "F. Scott Fitzgerald",
+                "opcion2": "Jane Austen",
+                "opcion3": "Mark Twain",
+                "opcion4": "George Orwell"
+            },
+            {
+                "id": 78,
+                "pregunta": "What is the chemical symbol for the element gold?",
+                "correcta": "Au",
+                "opcion2": "Ag",
+                "opcion3": "Cu",
+                "opcion4": "Fe"
+            },
+            {
+                "id": 79,
+                "pregunta": "In which year was the first successful human heart transplant performed?",
+                "correcta": "1967",
+                "opcion2": "1975",
+                "opcion3": "1982",
+                "opcion4": "1950"
+            },
+            {
+                "id": 80,
+                "pregunta": "Who is the author of the philosophical work 'Thus Spoke Zarathustra'?",
+                "correcta": "Friedrich Nietzsche",
+                "opcion2": "Søren Kierkegaard",
+                "opcion3": "Immanuel Kant",
+                "opcion4": "Jean-Jacques Rousseau"
+            },
+            {
+                "id": 81,
+                "pregunta": "What is the speed of light in a vacuum?",
+                "correcta": "299,792 kilometers per second",
+                "opcion2": "150,000 kilometers per second",
+                "opcion3": "500,000 kilometers per second",
+                "opcion4": "200,000 kilometers per second"
+            },
+            {
+                "id": 82,
+                "pregunta": "Which famous physicist developed the theory of general relativity?",
+                "correcta": "Albert Einstein",
+                "opcion2": "Isaac Newton",
+                "opcion3": "Niels Bohr",
+                "opcion4": "Stephen Hawking"
+            },
+            {
+                "id": 83,
+                "pregunta": "In which year was the United Nations founded?",
+                "correcta": "1945",
+                "opcion2": "1919",
+                "opcion3": "1932",
+                "opcion4": "1955"
+            },
+            {
+                "id": 84,
+                "pregunta": "Who composed the 'Four Seasons'?",
+                "correcta": "Antonio Vivaldi",
+                "opcion2": "Wolfgang Amadeus Mozart",
+                "opcion3": "Ludwig van Beethoven",
+                "opcion4": "Johann Sebastian Bach"
+            },
+            {
+                "id": 85,
+                "pregunta": "What is the capital of Bhutan?",
+                "correcta": "Thimphu",
+                "opcion2": "Kathmandu",
+                "opcion3": "Dhaka",
+                "opcion4": "Colombo"
+            },
+            {
+                "id": 86,
+                "pregunta": "Who was the first woman to win a Nobel Prize?",
+                "correcta": "Marie Curie",
+                "opcion2": "Mother Teresa",
+                "opcion3": "Jane Goodall",
+                "opcion4": "Rosalind Franklin"
+            },
+            {
+                "id": 87,
+                "pregunta": "Which novel begins with the line 'Call me Ishmael'?",
+                "correcta": "Moby-Dick",
+                "opcion2": "Pride and Prejudice",
+                "opcion3": "The Great Gatsby",
+                "opcion4": "War and Peace"
+            }
 ]
 
 
@@ -528,20 +688,35 @@ const preguntas = [
                 "opcion4": "Diego Maradona"
         }
 
-
-
-
 ];
 
+
+let preguntasMostradas = [];
 
 function mostrarPregunta() {
         if (!juegoComenzado) {
                 juegoComenzado = true;
+                preguntasMostradas = [];
         }
         en_juego = true
 
-        aleatorio = Math.floor(Math.random() * preguntas.length);
-        const p = preguntas[aleatorio];
+        // aleatorio = Math.floor(Math.random() * preguntas.length);
+        // const p = preguntas[aleatorio];
+        // console.log(p.id)
+        // if (preguntasMostradas.length === preguntas.length) {
+        //         preguntasMostradas = [];
+                
+        //     }
+
+        do {
+                aleatorio = Math.floor(Math.random() * preguntas.length);
+                var p = preguntas[aleatorio];
+            } while (preguntasMostradas.includes(p));
+        
+  
+            console.log( p.id);
+            console.log(preguntasMostradas)
+            preguntasMostradas.push(p);
 
         array_respuestas = [p.correcta, p.opcion2, p.opcion3, p.opcion4];
         resp_correcta = p.correcta;
