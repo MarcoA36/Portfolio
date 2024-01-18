@@ -3,7 +3,7 @@
 function cambiarFondo(comp) {
     id_seleccionado = comp.id;
     if (id_seleccionado == "fondo1") {
-        document.getElementById("tablero").style.backgroundImage = "url(../imagenes/fondo1.jpg)";
+        document.getElementById("tablero").style.backgroundImage = "url(../imagenes/espacio1920.jpg)";
         document.getElementById("tablero").style.backgroundSize = "cover";     
     } else if (id_seleccionado == "fondo2") {
         document.getElementById("tablero").style.backgroundImage = "url(../imagenes/fondo2.jpg)";

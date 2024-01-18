@@ -19,13 +19,6 @@ body{
     box-sizing: border-box;
 }
 
-body > * {
-    text-align: center;
-    
-}
-
-
-
 .container_juego {
     margin: auto;
     width: 60%;
@@ -95,7 +88,9 @@ height: 78vh;
 .juego_resultado  p,
 .juego_puntos  p {
    margin: 0;
+   font-size: 30px;
 }
+
 
 
 .juego_resultado {
@@ -197,14 +192,15 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-@media(max-width: 1000px) {
+@media(max-width: 1200px) {
     .container_juego {
         width: 80%;
     }
 
 }
 
-@media(max-width: 600px) {
+
+@media(max-width: 1000px) {
     .container_juego {
         width: 98%;
         margin-top: 10px;

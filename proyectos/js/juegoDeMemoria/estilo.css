@@ -1,3 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* html{
+    height: 100%;
+} */
+
+body{
+    min-height: 100%;
+    font-size: 34px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    background: black;
+}
+
+body > * {
+    /* padding: 10px; */
+    text-align: center;
+    /* box-shadow: 5px 5px 50px white; */
+    /* box-shadow: 5px 5px 40px var(--color-logo1); */
+}
+
+
+
 
 .container {
     width: 90%;
@@ -17,7 +46,7 @@
 }
 
 .tablero {
-    background-image: url("../imagenes/fondo2.jpg");
+    background-image: url("../imagenes/espacio1920.jpg");
     background-size: cover;
     width: 70%;
     margin: auto;
@@ -150,11 +179,11 @@
         grid-template-columns: 1fr;
     }
 
-    .main {
+    /* .main {
         grid-template-columns: 1fr;
     }
 
-  
+   */
     .bajo_juego {
         height: 50px;
     }
@@ -218,7 +247,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(8, 1fr);
  
-    background-image: url("../imagenes/fondo1.jpg");
+    /* background-image: url("../imagenes/fondo1.jpg"); */
 }
 .area-tarjeta {
     width: 100%;

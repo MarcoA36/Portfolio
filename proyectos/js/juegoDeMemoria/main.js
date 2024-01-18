@@ -158,7 +158,7 @@ let vIntervalo;
 
 function contador() {
     if (nivelCambiado == false) {
-        vContador = 90;
+        vContador = 99;
     } else {
         vContador = time;
     }
@@ -183,7 +183,7 @@ function nuevoJuego() {
         paresEncontrados = 0;
         tarjetas.sort(() => Math.random() - 0.5)//mezcla los iconos
         tablero.innerHTML = tarjetas.join(" ")//ingresa cada tarjeta en el tablero, y le saca la coma con "join"
-        tablero.style.backgroundImage = 'url(../imagenes/fondo1.jpg)'
+        tablero.style.backgroundImage = 'url(../imagenes/espacio1920.jpg)'
         tablero.style.backgroundSize = "cover"
         document.getElementById("pares").innerHTML = "";
         contador(); 

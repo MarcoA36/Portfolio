@@ -184,7 +184,7 @@ function contador() {
         vContador = tiempo;
     }
     else {
-        vContador = 6;
+        vContador = 8;
     }
     vIntervalo = setInterval(() => {
         vContador--;
