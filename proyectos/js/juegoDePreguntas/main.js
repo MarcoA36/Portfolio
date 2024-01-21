@@ -686,9 +686,136 @@ const preguntas = [
                 "opcion2": "Cristiano Ronaldo",
                 "opcion3": "Pelé",
                 "opcion4": "Diego Maradona"
-        }
+        },
+        {
+                "id": 58,
+                "pregunta": "¿Quién es el único futbolista en ganar la Bota de Oro en tres ligas diferentes?",
+                "correcta": "Marco van Basten",
+                "opcion2": "Thierry Henry",
+                "opcion3": "Luis Suárez",
+                "opcion4": "Ruud van Nistelrooy"
+                },
+                {
+                "id": 59,
+                "pregunta": "¿Cuál es el único país que ha participado en todas las Copas Mundiales de la FIFA?",
+                "correcta": "Brasil",
+                "opcion2": "Alemania",
+                "opcion3": "Argentina",
+                "opcion4": "Italia"
+                },
+                {
+                "id": 60,
+                "pregunta": "¿Quién ostenta el récord de más goles marcados en una temporada de la Premier League?",
+                "correcta": "Andy Cole",
+                "opcion2": "Alan Shearer",
+                "opcion3": "Thierry Henry",
+                "opcion4": "Didier Drogba"
+                },
+                {
+                "id": 61,
+                "pregunta": "¿En qué año se introdujo el sistema de videoarbitraje (VAR) en la Copa del Mundo de la FIFA?",
+                "correcta": "2018",
+                "opcion2": "2014",
+                "opcion3": "2006",
+                "opcion4": "2022"
+                },
+                {
+                        "id": 62,
+                        "pregunta": "¿Cuál es el metal más abundante en la corteza terrestre?",
+                        "correcta": "Aluminio",
+                        "opcion2": "Hierro",
+                        "opcion3": "Cobre",
+                        "opcion4": "Plomo"
+                        },
+                        {
+                        "id": 63,
+                        "pregunta": "¿Quién fue el primer ser humano en orbitar la Tierra?",
+                        "correcta": "Yuri Gagarin",
+                        "opcion2": "Alan Shepard",
+                        "opcion3": "John Glenn",
+                        "opcion4": "Valentina Tereshkova"
+                        },
+                        {
+                        "id": 64,
+                        "pregunta": "¿En qué año se descubrió la penicilina?",
+                        "correcta": "1928",
+                        "opcion2": "1945",
+                        "opcion3": "1895",
+                        "opcion4": "1953"
+                        },
+                        {
+                        "id": 65,
+                        "pregunta": "¿Cuál es el elemento químico más pesado de la tabla periódica?",
+                        "correcta": "Oganesón",
+                        "opcion2": "Uranio",
+                        "opcion3": "Plutonio",
+                        "opcion4": "Polonio"
+                        },
+                        {
+                        "id": 66,
+                        "pregunta": "¿Quién fue el primer presidente de Estados Unidos?",
+                        "correcta": "George Washington",
+                        "opcion2": "Thomas Jefferson",
+                        "opcion3": "John Adams",
+                        "opcion4": "James Madison"
+                        },
+                        {
+                        "id": 67,
+                        "pregunta": "¿En qué año se inauguró el Canal de Panamá?",
+                        "correcta": "1914",
+                        "opcion2": "1905",
+                        "opcion3": "1925",
+                        "opcion4": "1935"
+                        },
+                        {
+                        "id": 68,
+                        "pregunta": "¿Cuál es la montaña más alta del mundo fuera del Himalaya?",
+                        "correcta": "Monte Aconcagua",
+                        "opcion2": "Monte McKinley",
+                        "opcion3": "Monte Kilimanjaro",
+                        "opcion4": "Monte Elbrús"
+                        },
+                        {
+                        "id": 69,
+                        "pregunta": "¿Cuántos continentes hay en el mundo?",
+                        "correcta": "7",
+                        "opcion2": "6",
+                        "opcion3": "8",
+                        "opcion4": "5"
+                        },
+                        {
+                        "id": 70,
+                        "pregunta": "¿En qué año se produjo la Revolución Rusa?",
+                        "correcta": "1917",
+                        "opcion2": "1905",
+                        "opcion3": "1922",
+                        "opcion4": "1933"
+                        },
+                        {
+                        "id": 71,
+                        "pregunta": "¿Quién escribió la obra literaria 'Cien años de soledad'?",
+                        "correcta": "Gabriel García Márquez",
+                        "opcion2": "Mario Vargas Llosa",
+                        "opcion3": "Isabel Allende",
+                        "opcion4": "Jorge Luis Borges"
+                        }
+
 
 ];
+
+
+function cambiarIdioma() {
+        var idiomaSeleccionado = document.getElementById("selectIdioma").value;
+    
+        if (idiomaSeleccionado === 'espanol') {
+            preguntasActuales = preguntas;
+        } else if (idiomaSeleccionado === 'ingles') {
+            preguntasActuales = questions;
+        }
+    
+        reiniciarJuego();
+        mostrarPregunta();
+    }
 
 
 let preguntasMostradas = [];
@@ -700,15 +827,7 @@ function mostrarPregunta() {
         }
         en_juego = true
 
-        // aleatorio = Math.floor(Math.random() * preguntas.length);
-        // const p = preguntas[aleatorio];
-        // console.log(p.id)
-        // if (preguntasMostradas.length === preguntas.length) {
-        //         preguntasMostradas = [];
-                
-        //     }
-
-        do {
+           do {
                 aleatorio = Math.floor(Math.random() * preguntas.length);
                 var p = preguntas[aleatorio];
             } while (preguntasMostradas.includes(p));
@@ -797,7 +916,7 @@ function buscarCorrecta(color) {
 
 function contador() {
 
-        vContador = 6;
+        vContador = 10;
         vIntervalo = setInterval(() => {
                 vContador--;
                 document.getElementById("contador").innerHTML = vContador
@@ -863,6 +982,9 @@ function volverAjugar() {
                 console.log(juegoComenzado)
         }
 }
+
+
+
 
 
 
