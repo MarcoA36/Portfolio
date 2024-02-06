@@ -46,7 +46,7 @@
 
 .seccion__proyectos .proyectos__titulo {
     margin: 20px 0;
-    border-bottom: 2px solid white;
+    /* border-bottom: 2px solid white; */
 }
 
 .seccion__tecnologias .card__container {
