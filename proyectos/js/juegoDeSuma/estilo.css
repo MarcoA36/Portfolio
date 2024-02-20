@@ -266,3 +266,13 @@ input[type=number]::-webkit-outer-spin-button {
     } 
 
 }
+
+@media(max-width: 800px) {
+    .juego {
+        background-image: url("../imagenes/espacio-1024.jpg");
+   
+    }
+
+}
+
+
