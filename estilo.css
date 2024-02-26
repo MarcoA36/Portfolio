@@ -1,33 +1,59 @@
 :root {
-    --background: #cccccc;
-  }
-
-
-*{
-    box-sizing: border-box;
+  --background: #cccccc;
+  --color-title: rgb(216, 175, 86);
+  --color-2: rgba(239, 49, 49, 0.555);
+  --shadow-title: 0px 4px 4px rgba(239, 49, 49, 0.555);
+  --font-family-title: "Anta", sans-serif;
+  --font-family-2: "Kdam Thmor Pro", sans-serif;
+  --box-shadow: 0px 4px 4px rgba(202, 190, 190, 0.5);
 }
 
-.body{
-    background: var(--background);
+* {
+  box-sizing: border-box;
 }
 
+.body {
+  background: var(--background);
+}
 
 .navbar_container {
   min-height: 78px;
 }
 
+.navbar-brand {
+  /* color: var(--color-title) !important; */
+  font-family: var(--font-family-2);
+
+}
+
+/* .navbar a {
+  color: var(--color-title);
+} */
+.banner h1 {
+  font-family: "Anta", sans-serif;
+  color: var(--color-title);
+  text-shadow: var(--shadow-title);
+}
+
+.banner .banner__mensaje {
+    font-family: var(--font-family-2);
+}
+
 .seccion {
-    margin:0px;
+  margin: 0px;
 }
 
 .seccion__portada {
-    background: linear-gradient(to bottom, #1a1a1a, #333, #555);
-    min-height: 92vh;
-    color: white;
-    margin-bottom: 0;
+  background: linear-gradient(to bottom, #1a1a1a, #333, #555);
+  min-height: 92vh;
+  color: white;
+  margin-bottom: 0;
 }
 
- /* .seccion__portada .container {
+
+
+
+/* .seccion__portada .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,27 +61,35 @@
 
 
 
-.seccion__proyectos{
-    background: linear-gradient(to bottom, #555, #333,#1a1a1a );
-    padding: 10px 0;
+.seccion__proyectos {
+  background: linear-gradient(to bottom, #555, #333, #1a1a1a);
+  padding: 10px 0;
+}
+
+
+
+
+.seccion__proyectos .proyectos__titulo {
+    color: var(--color-title) !important;
+    text-shadow: var(--shadow-title);
+    font-family: var(--font-family-title);
 }
 
 .seccion__proyectos .card {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .seccion__proyectos .proyectos__titulo {
-    margin: 20px 0;
-    /* border-bottom: 2px solid white; */
+  margin: 20px 0;
+  /* border-bottom: 2px solid white; */
 }
 
 .seccion__tecnologias .card__container {
-    text-align: center;
+  text-align: center;
 }
 
-
 .seccion__contacto .form__mensaje {
-   min-height: 200px;
+  min-height: 200px;
 }
 
 /* .seccion__contacto * {
@@ -64,49 +98,45 @@
 
 
 
-
 .card__wrapper a {
-    text-decoration: none;
+  text-decoration: none;
 
-    /* color:black; */
+  /* color:black; */
 }
 
-
 .link_whatsapp {
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
 }
 
 .card-img-top {
-    max-height: 250px;
-    object-fit: contain; 
-    box-shadow: 0px 4px 8px rgba(202, 190, 190, 0.5);
-    background-color: black;
+  max-height: 200px;
+  object-fit: contain;
+  /* box-shadow: 0px 4px 8px rgba(202, 190, 190, 0.5); */
+  box-shadow: var(--box-shadow);
+  background-color: black;
 }
-
 
 .card-body {
-    text-align: center;
+  text-align: center;
 }
 
-@media(max-width:600px) {
-    .portada_titulo h1{
-        text-align: center;
-        margin: auto;
-    }
+@media (max-width: 600px) {
+  .portada_titulo h1 {
+    text-align: center;
+    margin: auto;
+  }
 
-    .portada_imagen {
-        margin-bottom: 10px;
-    }
+  .portada_imagen {
+    margin-bottom: 10px;
+  }
 
-    .portada_imagen-y-texto {
-        margin: 20px 0;
-    }
+  .portada_imagen-y-texto {
+    margin: 20px 0;
+  }
 
-    .card__wrapper {
-        margin-bottom: 20px;
-    }
-
-
+  .card__wrapper {
+    margin-bottom: 20px;
+  }
 }
